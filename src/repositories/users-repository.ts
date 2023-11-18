@@ -6,7 +6,5 @@ export interface UsersRepository {
   findUniqueByEmail(email: string): Promise<User | null>
   findUniqueByCellphone(cellphone: string): Promise<User | null>
   findUniqueByCpf(cpf: string): Promise<User | null>
-  findUniqueByPassportNumber(cpf: string): Promise<User | null>
-  findUniqueByRg(cpf: string): Promise<User | null>
   findById(id: string): Promise<User | null>
 }

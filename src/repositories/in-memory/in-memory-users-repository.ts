@@ -50,28 +50,6 @@ export class InMemoryUsersRespository implements UsersRepository {
     return user
   }
 
-  async findUniqueByPassportNumber(passport_number: string) {
-    const user = this.items.find(
-      (item) => item.passport_number === passport_number,
-    )
-
-    if (!user) {
-      return null
-    }
-
-    return user
-  }
-
-  async findUniqueByRg(rg: string) {
-    const user = this.items.find((item) => item.rg === rg)
-
-    if (!user) {
-      return null
-    }
-
-    return user
-  }
-
   async findUniqueByCellphone(cellphone: string) {
     const user = this.items.find((item) => item.cellphone === cellphone)
 

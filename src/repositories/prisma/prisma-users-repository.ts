@@ -43,22 +43,6 @@ export class PrismaUsersRepository implements UsersRepository {
     return user
   }
 
-  async findUniqueByRg(rg: string) {
-    const user = await prisma.user.findUnique({
-      where: { rg },
-    })
-
-    return user
-  }
-
-  async findUniqueByPassportNumber(passport_number: string) {
-    const user = await prisma.user.findUnique({
-      where: { passport_number },
-    })
-
-    return user
-  }
-
   async save(data: User) {
     const checkIn = await prisma.user.update({
       where: {
