@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply } from 'fastify'
 import { z } from 'zod'
-import { UserAlreadyExistsError } from '@/services/errors/user-already-exists-error'
-import { makeCreateUserService } from '@/services/factories/make-create-user-service'
+import { UserAlreadyExistsError } from '../../../services/errors/user-already-exists-error'
+import { makeCreateUserService } from '../../../services/factories/make-create-user-service'
 
 export async function userController(
   request: FastifyRequest,
