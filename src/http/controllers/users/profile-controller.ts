@@ -1,5 +1,5 @@
-import { ResourceNotFoundError } from '@/services/errors/resource-not-found-error'
-import { makeGetUserProfileService } from '@/services/factories/make-get-user-profile-service'
+import { ResourceNotFoundError } from '../../../services/errors/resource-not-found-error'
+import { makeGetUserProfileService } from '../../../services/factories/make-get-user-profile-service'
 import { FastifyRequest, FastifyReply } from 'fastify'
 
 export async function profileController(

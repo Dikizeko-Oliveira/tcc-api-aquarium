@@ -1,5 +1,5 @@
-import { prisma } from '@/lib/prisma'
 import { Pet, Prisma } from '@prisma/client'
+import { prisma } from '../../lib/prisma'
 import { PetsRepository } from '../pets-repository'
 
 export class PrismaPetsRepository implements PetsRepository {

@@ -1,6 +1,6 @@
 import { FastifyRequest, FastifyReply } from 'fastify'
 import { z } from 'zod'
-import { makeFetchPetsService } from '@/services/factories/fetch-pets-service'
+import { makeFetchPetsService } from '../../../services/factories/fetch-pets-service'
 
 export async function fetchPetsController(
   request: FastifyRequest,

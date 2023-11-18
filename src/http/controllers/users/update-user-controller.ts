@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply } from 'fastify'
 import { z } from 'zod'
-import { makeUpdateUserService } from '@/services/factories/make-update-user-service'
-import { ResourceNotFoundError } from '@/services/errors/resource-not-found-error'
+import { makeUpdateUserService } from '../../../services/factories/make-update-user-service'
+import { ResourceNotFoundError } from '../../../services/errors/resource-not-found-error'
 
 export async function updateUserController(
   request: FastifyRequest,

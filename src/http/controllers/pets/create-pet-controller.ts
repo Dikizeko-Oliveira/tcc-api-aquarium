@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply } from 'fastify'
 import { z } from 'zod'
-import { makeCreatePetService } from '@/services/factories/make-create-pets-service'
-import { PetAlreadyExistsError } from '@/services/errors/pet-already-exists-error'
+import { makeCreatePetService } from '../../../services/factories/make-create-pets-service'
+import { PetAlreadyExistsError } from '../../../services/errors/pet-already-exists-error'
 
 export async function createPetController(
   request: FastifyRequest,

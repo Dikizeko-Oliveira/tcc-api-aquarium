@@ -1,4 +1,4 @@
-import { PetsRepository } from '@/repositories/pets-repository'
+import { PetsRepository } from '../../repositories/pets-repository'
 
 interface GetPetRequest {
   page: number

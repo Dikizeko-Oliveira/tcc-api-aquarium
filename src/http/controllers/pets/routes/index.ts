@@ -1,5 +1,5 @@
 import { FastifyInstance } from 'fastify'
-import { verifyJwt } from '@/http/middlewares/verify-jwt'
+import { verifyJwt } from '../../../../http/middlewares/verify-jwt'
 import { createPetController } from '../create-pet-controller'
 import { getPetController } from '../get-pet-controller'
 import { fetchPetsController } from '../fetch-pets-controller'
