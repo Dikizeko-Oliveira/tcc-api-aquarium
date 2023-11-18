@@ -1,5 +1,5 @@
 import { FastifyInstance } from 'fastify'
-import { verifyJwt } from '@/http/middlewares/verify-jwt'
+import { verifyJwt } from '../../../../http/middlewares/verify-jwt'
 import { userController } from '../user-controller'
 import { authenticateController } from '../authenticate-controller'
 import { refreshTokenController } from '../refresh-token-controller'
